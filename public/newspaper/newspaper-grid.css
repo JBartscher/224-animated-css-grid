@@ -1,0 +1,67 @@
+.newspaper-grid {
+    display: grid;
+    gap: 1rem;
+  
+    /* Explicit grid */
+    grid-template-areas:
+    '1  2  c 🧠'
+    'l 👾 👾 r'
+    'l 👾 👾 r'
+    'f  f  f  r';
+
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 140px auto auto 140px;
+}
+
+.card:nth-child(1) {
+    grid-area: "1";
+}
+.card:nth-child(2) {
+    grid-area: "2"  /* 2; Vorsicht mit Zahlen!"*/
+}
+.card:nth-child(3) {
+    grid-area: c;
+}
+.card:nth-child(4) {
+    grid-area: 🧠;
+}
+.left {
+    grid-area: l;
+}
+.right {
+    grid-area: r;
+}
+.footer {
+    grid-area: f;
+}
+.main {
+    grid-area: 👾;
+}
+
+@media screen and (max-width: 600px){
+    .newspaper-grid {
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+
+        /* Explicit grid */
+        grid-template-areas:
+        'l r'
+        'l r'
+        '👾 👾'
+        '👾 👾'
+        'f f'
+        'c 🧠'       
+        '1 2';
+        
+        /*Achtung muss zu template areas passen*/
+        /* grid-template-rows: 1fr 6fr 2fr 1fr 1fr; <-- erzeugt nicht das gewünschte Ergebniss*/
+        grid-template-rows: 1fr 1fr 3fr [main1] 3fr [main2] 2fr 1fr 1fr; 
+        grid-template-columns: repeat(auto-fit, minmax(130px, 300px));
+        /* grid-template-columns: 140px auto auto 140px */;
+    }
+}
+
+@media screen and (min-width: 600px){
+
+}

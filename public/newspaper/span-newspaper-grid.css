@@ -1,0 +1,87 @@
+.newspaper-grid {
+    display: grid;
+    gap: 1rem;
+  
+    /* Explicit grid */
+    grid-template-rows: [head] 1fr [main-start] minmax(240px, 4fr) [main-end] 1fr [footer-end];
+    grid-template-columns: [left] 140px auto auto [right] 140px;
+}
+
+
+/*
+@media screen and (max-width: 600px){
+    .newspaper-grid {
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 1fr [main1] 2fr [main2] 3fr 2fr 1fr 1fr; 
+        grid-template-columns: repeat(auto-fit, minmax(130px, 300px));
+    }
+}
+*/
+@media screen and (min-width: 600px){
+    .card:nth-child(1) {
+        grid-column: 1;
+        /*
+        same as:
+        grid-column-start: 1;
+        grid-column-end: 1;
+        */
+        grid-row: 1;
+        /*
+        same as:
+        grid-row-start: 1;
+        grid-row-end: 1;
+        */
+    }
+    .card:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .card:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .card:nth-child(4) {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .left {
+        grid-row: 2 / span 2;
+        grid-column: 1;
+    }
+    .right {
+       grid-row: 2/ span 2;
+       grid-column: 4;
+    }
+    .footer {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        /*
+        same as:
+        grid-column: 1 / span 4
+        */
+        /* QUIZ: what will happen here?*/
+        /* grid-column 1 / span end */ 
+        grid-row: 4;
+         /*
+        same as:
+        grid-row: -1;
+        */
+        /* QUIZ: what will happen here?*/
+        /* grid-row: 5 */
+    }
+    
+    .main {
+        height: 100%;
+
+        /*named lines*/
+        grid-row: main-start / footer-end; 
+        grid-column: 2 / span 2;
+        /* same as:
+        grid-column: 2 / span 2;
+        grid-row: 2 / span  3
+        */
+    }
+
+}
