@@ -1,0 +1,30 @@
+.implicit-grid-area {
+    display: grid;
+    gap: 1rem;
+  
+    /* Explicit grid */
+    grid-template-rows: [foo-start]1fr[foo-end bar-start] 1fr [bar-end];
+    grid-template-columns:[foo-start] 1fr [foo-end bar-start] 1fr [bar-end];
+}
+
+#implicit-grid-area-1 {
+   grid-area: bar; /*implict defined by line name*/
+}
+
+#implicit-grid-area-4 {
+    grid-area: foo; /*implict defined by line name*/
+}
+
+.broken-implicit-grid-area {
+    display: grid;
+    gap: 1rem;
+  
+    /* Explicit grid */
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:  [foo-start]1fr[foo-end] 1fr;
+}
+
+#broken-1 {
+    grid-area: foo; /*implict defined by line name? Nope, this creats a NEW column*/
+}
+

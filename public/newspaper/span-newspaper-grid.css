@@ -3,7 +3,7 @@
     gap: 1rem;
   
     /* Explicit grid */
-    grid-template-rows: [head] 1fr [main-start] minmax(240px, 4fr) [main-end] 1fr [footer-end];
+    grid-template-rows: [head] 1fr [main-start] minmax(0, 4fr) [main-end] 1fr [footer-end];
     grid-template-columns: [left] 140px auto auto [right] 140px;
 }
 
