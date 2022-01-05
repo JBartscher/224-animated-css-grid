@@ -1,5 +1,5 @@
 .implicit {
-    background-color: #d31c68;
+    background-color: #20b1bb;
 }
 .darken {
     background-color: rgb(27, 27, 27);
@@ -23,6 +23,11 @@
 
 #g1_1{
     grid-column-start: 3;
+    /* 
+    "Negative numbers will count backwards from the end of explicitly defined grid lines"
+    - E. A. Meyer, E. Weyl (2017). CSS the definitive guide (4th edition, page 689)
+    QUIZ: What will happen here?(TRICKQUESTION)*/
+    /* grid-row-start: -1; */
 }
 
 #g1_2{
@@ -31,5 +36,5 @@
 }
 
 #g2_1{
-    grid-column-start: 3;
+    grid-column-start: 3;    
 }
