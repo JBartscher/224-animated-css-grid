@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grow implicit</title>
+
+    <style>
+        @import url('../base.css');
+        @import url('./align.css');
+
+    </style>
+  </head>
+  <body>   
+
+
+    
+    <h1>align grid-item with justify-self</h1>
+    <!-- --- horizontal -->
+    <section class="justify-self">
+        <div class="card">start</div>
+        <div class="card">end</div>
+        <div class="card">center</div>
+        <div class="card">left</div>
+        <div class="card">right</div>
+        <div class="card">self-start</div>
+        <div class="card">self-end</div>
+        <div class="card">stretch</div>
+    </section>
+        
+    <h1>align grid-item with align-self</h1>
+    <!-- | vertical -->
+    <section class="align-self">
+        <div class="card">start</div>
+        <div class="card">end</div>
+        <div class="card">center</div>
+        <div class="card">left</div>
+        <div class="card">right</div>
+        <div class="card">self-start</div>
+        <div class="card">self-end</div>
+        <div class="card">stretch</div>
+    </section>
+
+    <h1>align grid</h1>
+
+    <section class="align">
+        <div id="g1_1" class="card" >1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div id="g1_2" class="card">4</div>
+    </section>
+
+
+  </body>
+</html>

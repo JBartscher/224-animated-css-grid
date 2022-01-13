@@ -1,0 +1,68 @@
+.justify-self{
+    display: grid;
+    grid-template-columns: repeat(8,5em);
+    grid-template-rows: 5em;
+}
+
+.card{
+    height:auto;
+    width: auto;
+    font-size: 12pt;
+}
+/* --- horizontal */
+.justify-self .card:nth-child(1) {
+    justify-self: start;
+}
+.justify-self .card:nth-child(2) {
+    justify-self: end;
+}
+.justify-self .card:nth-child(3) {
+    justify-self: center;
+}
+.justify-self .card:nth-child(4) {
+    justify-self: left;
+}
+.justify-self .card:nth-child(5) {
+    justify-self: right;
+}
+.justify-self .card:nth-child(6) {
+    justify-self: self-start;
+}
+.justify-self .card:nth-child(7) {
+    justify-self: self-end;
+}
+.justify-self .card:nth-child(8) {
+    justify-self: stretch;
+}
+
+.align-self{
+    display: grid;
+    grid-template-columns: repeat(8,5em);
+    grid-template-rows: 5em;
+}
+
+/* | vertical */
+.align-self .card:nth-child(1) {
+    align-self: start;
+}
+.align-self .card:nth-child(2) {
+    align-self: end;
+}
+.align-self .card:nth-child(3) {
+    align-self: center;
+}
+.align-self .card:nth-child(4) {
+    align-self: left; /* vertical -> no effect */
+}
+.align-self .card:nth-child(5) {
+    align-self: right; /* vertical -> no effect */
+}
+.align-self .card:nth-child(6) {
+    align-self: self-start;
+}
+.align-self .card:nth-child(7) {
+    align-self: self-end;
+}
+.justify-self .card:nth-child(8) {
+    justify-self: stretch;
+}
