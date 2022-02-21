@@ -15,10 +15,10 @@
   <body>   
 
 
-    
+    <br>
     <h1>align grid-item with justify-self</h1>
     <!-- --- horizontal -->
-    <section class="justify-self">
+    <section class="justify-self contrast">
         <div class="card">start</div>
         <div class="card">end</div>
         <div class="card">center</div>
@@ -28,10 +28,10 @@
         <div class="card">self-end</div>
         <div class="card">stretch</div>
     </section>
-        
+    <br><br>      
     <h1>align grid-item with align-self</h1>
     <!-- | vertical -->
-    <section class="align-self">
+    <section class="align-self contrast">
         <div class="card">start</div>
         <div class="card">end</div>
         <div class="card">center</div>
@@ -41,16 +41,104 @@
         <div class="card">self-end</div>
         <div class="card">stretch</div>
     </section>
-
-    <h1>align grid</h1>
-
-    <section class="align">
-        <div id="g1_1" class="card" >1</div>
-        <div class="card">2</div>
-        <div class="card">3</div>
-        <div id="g1_2" class="card">4</div>
+<br><br><br><br><br>
+    <h1>place-items</h1>
+    <h4>start</h4>
+    <section class="cube-grid contrast" style="place-items: start;">
+        <div class="card">start</div>
+        <div class="card">start</div>
+        <div class="card">start</div>
+        <div class="card">start</div>
+    </section>
+    <h4>end</h4>
+    <section class="cube-grid contrast" style="place-items: end;">
+        <div class="card">end</div>
+        <div class="card">end</div>
+        <div class="card">end</div>
+        <div class="card">end</div>
+    </section>
+    <h4>center</h4>
+    <section class="cube-grid contrast" style="place-items: center;">
+        <div class="card">center</div>
+        <div class="card">center</div>
+        <div class="card">center</div>
+        <div class="card">center</div>
+    </section>
+    <h4>stretch</h4>
+    <section class="cube-grid contrast" style="place-items: stretch;">
+        <div class="card">stretch</div>
+        <div class="card">stretch</div>
+        <div class="card">stretch</div>
+        <div class="card">stretch</div>
+    </section>
+    <h4>space-around</h4>
+    <p>places an even amount of space between each grid item, with half-sized spaces on the far ends</p>
+    <section class="cube-grid contrast" style="place-items: space-around;">
+        <div class="card">space-around</div>
+        <div class="card">space-around</div>
+        <div class="card">space-around</div>
+        <div class="card">space-around</div>
+    </section>
+    <h4>space-between </h4>
+    <p>places an even amount of space between each grid item, with no space at the far ends</p>
+    <section class="cube-grid contrast" style="place-items: space-between;">
+        <div class="card">space-between</div>
+        <div class="card">space-between</div>
+        <div class="card">space-between</div>
+        <div class="card">space-between</div>
+    </section>
+    <h4>space-evenly</h4>
+    <p>places an even amount of space between each grid item, including the far ends</p>
+    <section class="cube-grid contrast" style="place-items: space-evenly;">
+        <div class="card">space-evenly</div>
+        <div class="card">space-evenly</div>
+        <div class="card">space-evenly</div>
+        <div class="card">space-evenly</div>
     </section>
 
-
+    <br><br><br>
+    <h1>place-content</h1>
+    <h4>start</h4>
+    <section class="static-cube-grid contrast" style="place-content:start;">
+      <div class="card">start</div>
+      <div class="card">start</div>
+      <div class="card">start</div>
+      <div class="card">start</div>
+    </section>
+    <h4>end</h4>
+    <section class="static-cube-grid contrast" style="place-content:end;">
+      <div class="card">end</div>
+      <div class="card">end</div>
+      <div class="card">end</div>
+      <div class="card">end</div>
+    </section>
+    <h4>center</h4>
+    <section class="static-cube-grid contrast" style="place-content:center;">
+      <div class="card">center</div>
+      <div class="card">center</div>
+      <div class="card">center</div>
+      <div class="card">center</div>
+    </section>
+    <h4>space-between</h4>
+    <section class="static-cube-grid contrast" style="place-content: space-between;">
+      <div class="card">space-between</div>
+      <div class="card">space-between</div>
+      <div class="card">space-between</div>
+      <div class="card">space-between</div>
+    </section>
+    <h4>space-around</h4>
+     <section class="static-cube-grid contrast" style="place-content: space-around;">
+        <div class="card">space-around</div>
+        <div class="card">space-around</div>
+        <div class="card">space-around</div>
+        <div class="card">space-around</div>
+    </section>
+    <h4>space-evenly</h4>
+    <section class="static-cube-grid contrast" style="place-content:space-evenly;">
+      <div class="card">space-evenly</div>
+      <div class="card">space-evenly</div>
+      <div class="card">space-evenly</div>
+      <div class="card">space-evenly</div>
+    </section>
   </body>
 </html>

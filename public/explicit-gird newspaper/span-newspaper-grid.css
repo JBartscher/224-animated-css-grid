@@ -62,14 +62,14 @@
         grid-column: 1 / span 4
         */
         /* QUIZ: what will happen here?*/
-        /* grid-column 1 / span end */ 
+        /*grid-column: 1 / span end; */
         grid-row: 4;
          /*
         same as:
         grid-row: -1;
         */
         /* QUIZ: what will happen here?*/
-        /* grid-row: 5 */
+        /* grid-row: 5;*/
     }
     
     .main {

@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>implicit grid area</title>
 
-    <style>
-        @import url('../../base.css');
-        @import url('../implicit-grid-area/implicit-grid-area.css');
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>implicit grid area</title>
 
-    </style>
-  </head>
-  <body>   
+  <style>
+    @import url('../../base.css');
+    @import url('../implicit-grid-area/implicit-grid-area.css');
+  </style>
+</head>
 
-
-    
-    <h1>implicit grid area</h1>
-
-    <section class="implicit-grid-area">
-        <div id="implicit-grid-area-1" class="card">area: foo</div>
-        <div class="card">2</div>
-        <div class="card">3</div>
-        <div id="implicit-grid-area-4" class="card">area: bar</div>
-    </section>
-
-    <h1>broken implicit grid area</h1>
-
-    <section class="broken-implicit-grid-area">
-        <div id="broken-1" class="card">area: foo</div>
-        <div class="card">2</div>
-        <div class="card">3</div>
-        <div  id="broken-4" class="card">4</div>
-    </section>
+<body>
 
 
-  </body>
+
+  <h1>implicit grid area</h1>
+
+  <section class="implicit-grid-area">
+    <div id="implicit-grid-area-1" class="card">area: foo</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div id="implicit-grid-area-4" class="card">area: bar</div>
+  </section>
+
+  <h1>broken implicit grid area</h1>
+
+  <section class="broken-implicit-grid-area">
+    <div id="broken-1" class="card">area: foo</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div id="broken-4" class="card">4</div>
+  </section>
+
+  <!--
+    <div style="display: flex; width: 100px; height: 100px; background-color: violet;">
+      <div style="height: 50px; width: 1500px; background-color: greenyellow;"></div>
+    </div>
+  -->
+
+</body>
+
 </html>
