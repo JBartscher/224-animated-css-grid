@@ -13,6 +13,6 @@
   }
 
   .card-wide {
-    grid-column: span 2 / auto;
+    grid-column: span 2 / auto; 
   }
 }
